@@ -1,0 +1,42 @@
+body{
+    text-align: center;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    .info{
+        flex: 30%;
+        margin: 1vw;
+        transition: flex 1s;
+        .img{
+            width: 30vw;
+            height: 30vw;
+            transition: width 3s, height 3s;
+        }
+        .picName{
+            opacity: 0;
+            font-size: 0px;
+            transition: opacity 1s, font-size 1s;
+        }
+        .description{
+            opacity: 0;
+            font-size: 0px;
+            transition: opacity 1s, font-size 1s;
+        }
+        &:hover{
+            flex: 100%;
+            .img{
+                width: 45vw;
+                height: 45vw;
+            }
+            .picName{
+                opacity: 1;
+                font-size: 1.8vw;
+            }
+            .description{
+                opacity: 1;
+                font-size: 1.4vw;
+            }
+        }
+    }
+}
