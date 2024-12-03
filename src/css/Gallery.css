@@ -5,39 +5,42 @@ body {
 .gallery {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 }
-.gallery .info {
+
+.info {
   flex: 30%;
   margin: 1vw;
-  transition: flex 1s;
+  transition: flex 1s, top 1s, z-index 0.3s;
+  position: relative;
 }
-.gallery .info .img {
+.info .img {
   width: 30vw;
   height: 30vw;
   transition: width 3s, height 3s;
 }
-.gallery .info .picName {
+.info .picName {
   opacity: 0;
   font-size: 0px;
   transition: opacity 1s, font-size 1s;
 }
-.gallery .info .description {
+.info .description {
   opacity: 0;
   font-size: 0px;
   transition: opacity 1s, font-size 1s;
 }
-.gallery .info:hover {
+.info:hover {
   flex: 100%;
 }
-.gallery .info:hover .img {
+.info:hover .img {
   width: 45vw;
   height: 45vw;
 }
-.gallery .info:hover .picName {
+.info:hover .picName {
   opacity: 1;
   font-size: 1.8vw;
 }
-.gallery .info:hover .description {
+.info:hover .description {
   opacity: 1;
   font-size: 1.4vw;
 }/*# sourceMappingURL=Gallery.css.map */
